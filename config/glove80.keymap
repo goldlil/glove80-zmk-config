@@ -102,7 +102,11 @@
             label = "slack_macrooo";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap &kp RC(RG(I))>, <&macro_wait_time 200>, <&macro_tap &kp RG(K)>;
+                <&macro_tap>,
+                <&kp RC(RG(I))>,
+                <&macro_wait_time 200>,
+                <&macro_tap>,
+                <&kp RG(K)>;
         };
     };
 
@@ -130,45 +134,45 @@
 
         characters {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp MINUS &kp DOLLAR &kp UNDER &kp PLUS                                                 &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp QUESTION &kp SLASH  &kp KP_EQUAL &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp EXCLAMATION  &kp COLON  &kp SEMICOLON &kp GRAVE &kp PERCENT &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &kp LS(LA(LEFT_ARROW))  &kp LS(LA(RIGHT))  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans                  &trans             &trans                                                                                       &trans     &trans  &trans    &trans  &trans
+&trans  &trans           &kp HASH                &kp ASTRK          &trans             &trans                                                            &trans  &trans     &trans  &trans    &trans  &trans
+&trans  &trans           &kp MINUS               &kp DOLLAR         &kp UNDER          &kp PLUS                                                          &trans  &trans     &trans  &trans    &trans  &trans
+&trans  &kp QUESTION     &kp SLASH               &kp KP_EQUAL       &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE                                                  &trans  &trans     &trans  &trans    &trans  &trans
+&trans  &kp EXCLAMATION  &kp COLON               &kp SEMICOLON      &kp GRAVE          &kp PERCENT       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp CARET  &trans  &kp PIPE  &trans  &trans
+&trans  &trans           &kp LS(LA(LEFT_ARROW))  &kp LS(LA(RIGHT))  &trans                               &trans  &trans  &trans  &trans  &trans  &trans          &trans     &trans  &trans    &trans  &trans
             >;
         };
 
         character_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp AMPERSAND    &kp AT_SIGN        &kp TILDE   &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp BACKSLASH  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        keypad-new {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N7           &kp N8              &kp N9  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N4           &kp N5              &kp N6  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N1  &kp N2              &kp N3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)          &kp LG(BACKSPACE)  &kp KP_NUMBER_0  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans           &trans             &trans                                                                                 &trans  &trans            &trans  &trans  &trans
+&trans  &trans         &trans           &trans             &trans                 &trans                                                  &trans  &trans  &trans            &trans  &trans  &trans
+&trans  &kp AMPERSAND  &kp AT_SIGN      &kp TILDE          &trans                 &trans                                                  &trans  &trans  &trans            &trans  &trans  &trans
+&trans  &kp BACKSLASH  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans                                                  &trans  &trans  &kp GREATER_THAN  &trans  &trans  &trans
+&trans  &trans         &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LESS_THAN     &trans  &trans  &trans
+&trans  &trans         &trans           &trans             &trans                         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans            &trans  &trans  &trans
             >;
         };
 
         c-layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans         &kp RC(RG(F))  &kp RC(RG(U))      &kp RC(RG(Y))    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp RC(RG(M))  &kp RC(RG(N))  &kp RC(RG(E))      &slack_macro1     &kp RC(RG(O))  &trans
+&trans  &trans  &trans  &trans  &trans                                                                         &trans         &trans             &trans           &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans         &trans         &trans             &trans           &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans         &kp RC(RG(F))  &kp RC(RG(U))      &kp RC(RG(Y))    &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &kp RC(RG(M))  &kp RC(RG(N))  &kp RC(RG(E))      &slack_macro1    &kp RC(RG(O))  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &kp RG(RC(H))  &kp LC(LG(LS(C)))  &kp RC(RG(DOT))  &kp RC(RG(K))  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans                 &trans         &trans             &trans           &trans         &trans
+            >;
+        };
+
+        keypad-new {
+            bindings = <
+&trans  &trans  &trans  &trans              &trans                                                                                                          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans              &trans               &trans                                                                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N7  &kp N8              &kp N9               &trans                                                                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N4  &kp N5              &kp N6               &trans                                                                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N1  &kp N2              &kp N3               &trans  &trans             &trans           &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)          &kp LG(BACKSPACE)  &kp KP_NUMBER_0  &trans  &trans  &trans  &kp LS(ENTER)          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
