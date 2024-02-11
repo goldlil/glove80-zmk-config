@@ -39,6 +39,25 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
+
+        tlb: toggle_layer_balanced {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TOGLE_LAYER_BALANCED";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            bindings = <&mo>, <&kp>;
+        };
+
+        thb: tap_hold_balanced {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THB";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
     };
 
     macros {
