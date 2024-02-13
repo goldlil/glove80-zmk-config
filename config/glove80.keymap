@@ -124,7 +124,7 @@
 
             bindings = <
 &kp F1           &kp F2    &kp F3     &kp F4          &kp F5                                                                                                    &kp F6     &kp F7             &kp F8             &kp F9     &kp F10
-&kp C_VOLUME_UP  &kp N1    &kp N2     &kp UP_ARROW    &kp N4     &kp N5                                                                                 &kp N6  &kp N7     &kp N8             &kp DOWN           &kp N0     &kp MINUS
+&kp C_VOLUME_UP  &kp N1    &kp N2     &kp UP_ARROW    &kp N4     &kp N5                                                                                 &kp N6  &kp N7     &kp DOWN           &kp N8             &kp N0     &kp MINUS
 &kp TAB          &kp Q     &kp W      &kp L           &kp P      &kp B                                                                                  &kp J   &kp F      &kp U              &kp Y              &kp P      &kp BSLH
 &kp ESC          &kp A     &kp R      &kp S           &kp T      &kp G                                                                                  &kp M   &tlb 2 N   &tlb 4 E           &kp I              &kp O      &kp SQT
 &kp GRAVE        &kp Z     &kp V      &tlb 3 C        &kp D      &kp X   &kp LSHFT  &kp LCTRL    &layer_td  &kp LGUI  &kp RCTRL  &kp RSHFT              &kp Q   &kp H      &tlb 1 ESCAPE      &kp DOT            &kp K      &kp PG_UP
